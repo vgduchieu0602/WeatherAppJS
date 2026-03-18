@@ -20,7 +20,11 @@
   <body>
     <main class="main-container">
       <header class="input-container">
-        <input type="text" class="city-input" placeholder="Search City..." />
+        <input
+          type="text"
+          class="city-input"
+          placeholder="Tìm kiếm thành phố..."
+        />
         <button class="search-btn">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -60,77 +64,29 @@
             <span class="material-symbols-outlined"> air </span>
             <div class="condition-item">
               <h5 class="regular-txt">Wind speed</h5>
-              <h5 class="humidity-value-txt">2 M/s</h5>
+              <h5 class="wind-value-txt">2 M/s</h5>
             </div>
           </div>
         </div>
 
-        <div class="forecast-items-container">
-          <div class="forecast-item">
-            <h5 class="forecast-item-date regular-txt">18 March</h5>
-            <img
-              src="./assets/weather/thunderstorm.svg"
-              alt=""
-              class="forecast-item-img"
-            />
-            <h5 class="forecast-item-temp">29 °C</h5>
-          </div>
-          <div class="forecast-item">
-            <h5 class="forecast-item-date regular-txt">18 March</h5>
-            <img
-              src="./assets/weather/thunderstorm.svg"
-              alt=""
-              class="forecast-item-img"
-            />
-            <h5 class="forecast-item-temp">29 °C</h5>
-          </div>
-          <div class="forecast-item">
-            <h5 class="forecast-item-date regular-txt">18 March</h5>
-            <img
-              src="./assets/weather/thunderstorm.svg"
-              alt=""
-              class="forecast-item-img"
-            />
-            <h5 class="forecast-item-temp">29 °C</h5>
-          </div>
-          <div class="forecast-item">
-            <h5 class="forecast-item-date regular-txt">18 March</h5>
-            <img
-              src="./assets/weather/thunderstorm.svg"
-              alt=""
-              class="forecast-item-img"
-            />
-            <h5 class="forecast-item-temp">29 °C</h5>
-          </div>
-          <div class="forecast-item">
-            <h5 class="forecast-item-date regular-txt">18 March</h5>
-            <img
-              src="./assets/weather/thunderstorm.svg"
-              alt=""
-              class="forecast-item-img"
-            />
-            <h5 class="forecast-item-temp">29 °C</h5>
-          </div>
+        <div class="forecast-items-container"></div>
+      </section>
+
+      <section class="search-city section-message">
+        <img src="./assets/message/search.png" alt="" class="message-img" />
+        <div class="search-city-content">
+          <h1>Đang tìm kiếm</h1>
+          <h4 class="regular-txt">
+            Tìm hiểu tình hình thời tiết của thành phố này
+          </h4>
         </div>
       </section>
 
-      <!-- <section class="search-city section-message">
-        <img src="./assets/message/search.png" alt="" class="message-img" />
-        <div>
-          <h1>Search City</h1>
-          <h4 class="regular-txt">
-            Find out the weather conditions of the city
-          </h4>
-        </div>
-      </section> -->
-
-      <section class="not-found section-message">
+      <section class="not-found section-message" style="display: none">
         <img src="./assets/message/notfound.png" alt="" class="message-img" />
-        <div>
-          <h1>Not Found</h1>
-          <h4 class="regular-txt">
-            Find out the weather conditions of the city
-          </h4>
+        <div class="not-found-content">
+          <h1>Không có kết quả</h1>
+          <h4 class="regular-txt">Không thấy kết quả về thành phố này</h4>
         </div>
       </section>
     </main>
